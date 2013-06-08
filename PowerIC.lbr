@@ -175,9 +175,9 @@
 <pin name="VREG" x="-17.78" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="DGND" x="-17.78" y="-38.1" length="middle" direction="pwr" rot="R90"/>
 <pin name="AGND" x="-12.7" y="-38.1" length="middle" direction="pwr" rot="R90"/>
-<pin name="VDD" x="-5.08" y="38.1" length="middle" direction="pwr" rot="R270"/>
-<pin name="VBOOT" x="0" y="38.1" length="middle" direction="pwr" rot="R270"/>
-<pin name="CP" x="5.08" y="38.1" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDD" x="-10.16" y="38.1" length="middle" direction="pwr" rot="R270"/>
+<pin name="VBOOT" x="-5.08" y="38.1" length="middle" direction="pwr" rot="R270"/>
+<pin name="CP" x="2.54" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="VSB" x="10.16" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="VSA" x="12.7" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="ADCIN" x="27.94" y="27.94" length="middle" direction="pwr" rot="R180"/>
@@ -195,13 +195,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L6470H">
+<deviceset name="L6470">
 <description>STMicro's L6470 (a.k.a "dSPIN") is a 3A, 8-45V bipolar stepper motor driver. It has built-in overcurrent detection, undervoltage detection, overtemperature detection, stall detection, a 5-bit ADC, and a switch input that can be used for either user jog control or as a hard stop function. As if that weren't enough, it also features microstepping support (up to 128 microsteps per full step) and PWM drive voltage limiting.</description>
 <gates>
 <gate name="G$1" symbol="L6470H" x="0" y="0"/>
 </gates>
 <devices>
-<device name="HTSSOP28" package="HTSSOP28">
+<device name="H" package="HTSSOP28">
 <connects>
 <connect gate="G$1" pin="!BUSY" pad="22"/>
 <connect gate="G$1" pin="!FLAG" pad="24"/>

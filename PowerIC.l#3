@@ -175,9 +175,9 @@
 <pin name="VREG" x="-17.78" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="DGND" x="-17.78" y="-38.1" length="middle" direction="pwr" rot="R90"/>
 <pin name="AGND" x="-12.7" y="-38.1" length="middle" direction="pwr" rot="R90"/>
-<pin name="VDD" x="-10.16" y="38.1" length="middle" direction="pwr" rot="R270"/>
-<pin name="VBOOT" x="-5.08" y="38.1" length="middle" direction="pwr" rot="R270"/>
-<pin name="CP" x="2.54" y="38.1" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDD" x="-5.08" y="38.1" length="middle" direction="pwr" rot="R270"/>
+<pin name="VBOOT" x="0" y="38.1" length="middle" direction="pwr" rot="R270"/>
+<pin name="CP" x="5.08" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="VSB" x="10.16" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="VSA" x="12.7" y="38.1" length="middle" direction="pwr" rot="R270"/>
 <pin name="ADCIN" x="27.94" y="27.94" length="middle" direction="pwr" rot="R180"/>
@@ -195,40 +195,12 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L6470H">
+<deviceset name="L6470">
 <description>STMicro's L6470 (a.k.a "dSPIN") is a 3A, 8-45V bipolar stepper motor driver. It has built-in overcurrent detection, undervoltage detection, overtemperature detection, stall detection, a 5-bit ADC, and a switch input that can be used for either user jog control or as a hard stop function. As if that weren't enough, it also features microstepping support (up to 128 microsteps per full step) and PWM drive voltage limiting.</description>
 <gates>
-<gate name="G$1" symbol="L6470H" x="0" y="0"/>
 </gates>
 <devices>
-<device name="HTSSOP28" package="HTSSOP28">
-<connects>
-<connect gate="G$1" pin="!BUSY" pad="22"/>
-<connect gate="G$1" pin="!FLAG" pad="24"/>
-<connect gate="G$1" pin="!STBY" pad="3"/>
-<connect gate="G$1" pin="ADCIN" pad="5"/>
-<connect gate="G$1" pin="AGND" pad="9"/>
-<connect gate="G$1" pin="CK" pad="19"/>
-<connect gate="G$1" pin="CP" pad="10"/>
-<connect gate="G$1" pin="CS" pad="23"/>
-<connect gate="G$1" pin="DGND" pad="21"/>
-<connect gate="G$1" pin="OSCIN" pad="7"/>
-<connect gate="G$1" pin="OSCOUT" pad="8"/>
-<connect gate="G$1" pin="OUT1A" pad="1"/>
-<connect gate="G$1" pin="OUT1B" pad="14"/>
-<connect gate="G$1" pin="OUT2A" pad="28"/>
-<connect gate="G$1" pin="OUT2B" pad="15"/>
-<connect gate="G$1" pin="PGND" pad="13 27 29"/>
-<connect gate="G$1" pin="SDI" pad="20"/>
-<connect gate="G$1" pin="SDO" pad="18"/>
-<connect gate="G$1" pin="STCK" pad="25"/>
-<connect gate="G$1" pin="SW" pad="4"/>
-<connect gate="G$1" pin="VBOOT" pad="11"/>
-<connect gate="G$1" pin="VDD" pad="17"/>
-<connect gate="G$1" pin="VREG" pad="6"/>
-<connect gate="G$1" pin="VSA" pad="2 26"/>
-<connect gate="G$1" pin="VSB" pad="12 16"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
